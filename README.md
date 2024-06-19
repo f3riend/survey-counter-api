@@ -9,7 +9,7 @@ The primary purpose of this project is to count and visualize the answers to sur
 ## Working Logic and Flowchart
 The website sends a predetermined JSON structure to the API using JavaScript. The API processes the received data, generates visualizations, converts the visualizations to base64 format, and then returns them to the website.
 
-![flowchart](https://github.com/f3riend/flask-counter-api/blob/main/flowchart.png)
+![flowchart](https://github.com/f3riend/flask-counter-api/blob/main/followchart.png)
 
 ## JSON Structure
 Here is an example of the JSON structure expected by the API:
