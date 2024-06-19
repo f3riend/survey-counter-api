@@ -17,10 +17,10 @@ def plot_to_base64(question):
     plt.title(question['question'])
     plt.xlabel('Cevaplar')
     plt.ylabel('Sayı')
-    plt.tight_layout()  # Grafiklerin sıkışık olmasını önler
+    plt.tight_layout()
     buffer = BytesIO()
-    plt.savefig(buffer, format='png')  # Grafik dosyasını bir bellek tamponunda saklar
-    plt.close()  # Grafiği kapat
+    plt.savefig(buffer, format='png')
+    plt.close()
     buffer.seek(0)
     image_base64 = base64.b64encode(buffer.getvalue()).decode()
     return image_base64
